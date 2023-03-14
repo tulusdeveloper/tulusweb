@@ -1,697 +1,701 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Soft-Tect Free Landing Page</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-<head>
-    <meta charset="utf-8">
-    <title>Tulus Developers</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Free HTML Templates" name="keywords">
-    <meta content="Free HTML Templates" name="description">
+        <!--Google fonts links-->
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
 
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
-
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
-
-    <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-
-    <!-- Libraries Stylesheet -->
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
-    <link href="lib/twentytwenty/twentytwenty.css" rel="stylesheet" />
-
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
-</head>
-
-<body>
-    <!-- Spinner Start -->
-    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-grow text-primary m-1" role="status">
-            <span class="sr-only">Loading...</span>
-        </div>
-        <div class="spinner-grow text-dark m-1" role="status">
-            <span class="sr-only">Loading...</span>
-        </div>
-        <div class="spinner-grow text-secondary m-1" role="status">
-            <span class="sr-only">Loading...</span>
-        </div>
-    </div>
-    <!-- Spinner End -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 
 
-    <!-- Topbar Start -->
-    <div class="container-fluid bg-light ps-5 pe-0 d-none d-lg-block">
-        <div class="row gx-0">
-            <div class="col-md-6 text-center text-lg-start mb-2 mb-lg-0">
-                <div class="d-inline-flex align-items-center">
-                    <small class="py-2"><i class="far fa-clock text-primary me-2"></i>Opening Hours: Mon - Tues : 6.00 am - 10.00 pm, Sunday Closed </small>
-                </div>
-            </div>
-            <div class="col-md-6 text-center text-lg-end">
-                <div class="position-relative d-inline-flex align-items-center bg-primary text-white top-shape px-5">
-                    <div class="me-3 pe-3 border-end py-2">
-                        <p class="m-0"><i class="fa fa-envelope-open me-2"></i>vincent@tulusdev.xyz</p>
-                    </div>
-                    <div class="py-2">
-                        <p class="m-0"><i class="fa fa-phone-alt me-2"></i>+254 702 782 776</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Topbar End -->
+        <!--For Plugins external css-->
+        <link rel="stylesheet" href="assets/css/plugins.css" />
+        <link rel="stylesheet" href="assets/css/roboto-webfont.css" />
 
+        <!--Theme custom css -->
+        <link rel="stylesheet" href="assets/css/style.css">
 
-    <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm px-5 py-3 py-lg-0">
-        <a href="index.html" class="navbar-brand p-0">
-            <h1 class="m-0 text-primary"><i class="fa fa-tooth me-2"></i>TulusDev</h1>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto py-0">
-                <a href="index.html" class="nav-item nav-link active">Home</a>
-                <a href="about.html" class="nav-item nav-link">About</a>
-                <a href="service.html" class="nav-item nav-link">Service</a>
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                    <div class="dropdown-menu m-0">
-                        <a href="price.html" class="dropdown-item">Pricing Plan</a>
-                        <a href="team.html" class="dropdown-item">Our Team</a>
-                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                        <a href="appointment.html" class="dropdown-item">Appointment</a>
-                    </div>
-                </div>
-                <a href="contact.html" class="nav-item nav-link">Contact</a>
-            </div>
-            <button type="button" class="btn text-dark" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></button>
-            <a href="appointment.html" class="btn btn-primary py-2 px-4 ms-3">Appointment</a>
-        </div>
-    </nav>
-    <!-- Navbar End -->
+        <!--Theme Responsive css-->
+        <link rel="stylesheet" href="assets/css/responsive.css" />
 
+        <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
 
-    <!-- Full Screen Search Start -->
-    <div class="modal fade" id="searchModal" tabindex="-1">
-        <div class="modal-dialog modal-fullscreen">
-            <div class="modal-content" style="background: rgba(9, 30, 62, .7);">
-                <div class="modal-header border-0">
-                    <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body d-flex align-items-center justify-content-center">
-                    <div class="input-group" style="max-width: 600px;">
-                        <input type="text" class="form-control bg-transparent border-primary p-3" placeholder="Type search keyword">
-                        <button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Full Screen Search End -->
-
-
-    <!-- Carousel Start -->
-    <div class="container-fluid p-0">
-        <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="w-100" src="img/carousel-1.jpg" alt="Image">
-                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                        <div class="p-3" style="max-width: 900px;">
-                            <h5 class="text-white text-uppercase mb-3 animated slideInDown">Automate your services</h5>
-                            <h1 class="display-1 text-white mb-md-4 animated zoomIn">The Best Tech Company</h1>
-                            <a href="appointment.html" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Appointment</a>
-                            <a href="" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Contact Us</a>
+        <!-- Sections -->
+        <section id="social" class="social">
+            <div class="container">
+                <!-- Example row of columns -->
+                <div class="row">
+                    <div class="social-wrapper">
+                        <div class="col-md-6">
+                            <div class="social-icon">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-google-plus"></i></a>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="social-contact">
+                                <a href="#"><i class="fa fa-phone"></i>+011 54925849</a>
+                                <a href="#"><i class="fa fa-envelope"></i>contact@softech.com</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <img class="w-100" src="img/carousel-2.jpg" alt="Image">
-                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                        <div class="p-3" style="max-width: 900px;">
-                            <h5 class="text-white text-uppercase mb-3 animated slideInDown">Edge computing</h5>
-                            <h1 class="display-1 text-white mb-md-4 animated zoomIn">The Best Tech Company</h1>
-                            <a href="appointment.html" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Appointment</a>
-                            <a href="" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Contact Us</a>
-                        </div>
-                    </div>
+            </div> <!-- /container -->       
+        </section>
+
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><img src="assets/images/logo.png" alt="Logo" /></a>
                 </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-    </div>
-    <!-- Carousel End -->
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="#home">Home</a></li>
+                        <li><a href="#features">PRODUCT</a></li>
+                        <li><a href="#service">Service</a></li>
+                        <li><a href="#price">PRICE</a></li>
+                        <li><a href="#business">Business</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li class="login"><a href="#">Sign In</a></li>
+                    </ul>
+
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+
+        <!--Home page style-->
+        <header id="home" class="home">
+            <div class="overlay-fluid-block">
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="home-wrapper">
+                            <div class="col-md-10 col-md-offset-1">
+                                <div class="home-content">
+
+                                    <h1>Bring your Big Data to Life With Soft-Tech</h1>
+                                    <p>Blue Lance transforms your company's data into rich visuals for you to collect and organize so you can focus on what matters to you. Stay in the know, spot trends as they happen, and push your business further.</p>
+
+                                    <div class="row">
+                                        <div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12">
+                                            <div class="home-contact">
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control" placeholder="Enter your email address">
+                                                    <input type="submit" class="form-control" value="Use It Free">
+
+                                                </div><!-- /input-group -->
 
 
-    <!-- Banner Start -->
-    <div class="container-fluid banner mb-5">
-        <div class="container">
-            <div class="row gx-0">
-                <div class="col-lg-4 wow zoomIn" data-wow-delay="0.1s">
-                    <div class="bg-primary d-flex flex-column p-5" style="height: 300px;">
-                        <h3 class="text-white mb-3">Opening Hours</h3>
-                        <div class="d-flex justify-content-between text-white mb-3">
-                            <h6 class="text-white mb-0">Mon - Fri</h6>
-                            <p class="mb-0"> 8:00am - 6:00pm</p>
-                        </div>
-                        <div class="d-flex justify-content-between text-white mb-3">
-                            <h6 class="text-white mb-0">Saturday</h6>
-                            <p class="mb-0"> 9:00am - 2:00pm</p>
-                        </div>
-                        <div class="d-flex justify-content-between text-white mb-3">
-                            <h6 class="text-white mb-0">Sunday</h6>
-                            <p class="mb-0"> closed</p>
-                        </div>
-                        <a class="btn btn-light" href="">Appointment</a>
-                    </div>
-                </div>
-                <div class="col-lg-4 wow zoomIn" data-wow-delay="0.3s">
-                    <div class="bg-dark d-flex flex-column p-5" style="height: 300px;">
-                        <h3 class="text-white mb-3">Search A </h3>
-                        <div class="date mb-3" id="date" data-target-input="nearest">
-                            <input type="text" class="form-control bg-light border-0 datetimepicker-input"
-                                placeholder="Appointment Date" data-target="#date" data-toggle="datetimepicker" style="height: 40px;">
-                        </div>
-                        <select class="form-select bg-light border-0 mb-3" style="height: 40px;">
-                            <option selected>Select A Service</option>
-                            <option value="1">Service 1</option>
-                            <option value="2">Service 2</option>
-                            <option value="3">Service 3</option>
-                        </select>
-                        <a class="btn btn-light" href="">Search Doctor</a>
-                    </div>
-                </div>
-                <div class="col-lg-4 wow zoomIn" data-wow-delay="0.6s">
-                    <div class="bg-secondary d-flex flex-column p-5" style="height: 300px;">
-                        <h3 class="text-white mb-3">Make Appointment</h3>
-                        <p class="text-white">Ipsum erat ipsum dolor clita rebum no rebum dolores labore, ipsum magna at eos et eos amet.</p>
-                        <h2 class="text-white mb-0">+012 345 6789</h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Banner Start -->
+                                            </div>
+                                        </div>
+                                    </div>
 
 
-    <!-- About Start -->
-    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-7">
-                    <div class="section-title mb-4">
-                        <h5 class="position-relative d-inline-block text-primary text-uppercase">About Us</h5>
-                        <h1 class="display-5 mb-0">The World's Best Dental Clinic That You Can Trust</h1>
-                    </div>
-                    <h4 class="text-body fst-italic mb-4">Diam dolor diam ipsum sit. Clita erat ipsum et lorem stet no lorem sit clita duo justo magna dolore</h4>
-                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna dolore erat amet</p>
-                    <div class="row g-3">
-                        <div class="col-sm-6 wow zoomIn" data-wow-delay="0.3s">
-                            <h5 class="mb-3"><i class="fa fa-check-circle text-primary me-3"></i>Award Winning</h5>
-                            <h5 class="mb-3"><i class="fa fa-check-circle text-primary me-3"></i>Professional Staff</h5>
-                        </div>
-                        <div class="col-sm-6 wow zoomIn" data-wow-delay="0.6s">
-                            <h5 class="mb-3"><i class="fa fa-check-circle text-primary me-3"></i>24/7 Opened</h5>
-                            <h5 class="mb-3"><i class="fa fa-check-circle text-primary me-3"></i>Fair Prices</h5>
-                        </div>
-                    </div>
-                    <a href="appointment.html" class="btn btn-primary py-3 px-5 mt-4 wow zoomIn" data-wow-delay="0.6s">Make Appointment</a>
-                </div>
-                <div class="col-lg-5" style="min-height: 500px;">
-                    <div class="position-relative h-100">
-                        <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s" src="img/about.jpg" style="object-fit: cover;">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- About End -->
-
-
-    <!-- Appointment Start -->
-    <div class="container-fluid bg-primary bg-appointment my-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container">
-            <div class="row gx-5">
-                <div class="col-lg-6 py-5">
-                    <div class="py-5">
-                        <h1 class="display-5 text-white mb-4">We Are A Certified and Award Winning Dental Clinic You Can Trust</h1>
-                        <p class="text-white mb-0">Eirmod sed tempor lorem ut dolores. Aliquyam sit sadipscing kasd ipsum. Dolor ea et dolore et at sea ea at dolor, justo ipsum duo rebum sea invidunt voluptua. Eos vero eos vero ea et dolore eirmod et. Dolores diam duo invidunt lorem. Elitr ut dolores magna sit. Sea dolore sanctus sed et. Takimata takimata sanctus sed.</p>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="appointment-form h-100 d-flex flex-column justify-content-center text-center p-5 wow zoomIn" data-wow-delay="0.6s">
-                        <h1 class="text-white mb-4">Make Appointment</h1>
-                        <form>
-                            <div class="row g-3">
-                                <div class="col-12 col-sm-6">
-                                    <select class="form-select bg-light border-0" style="height: 55px;">
-                                        <option selected>Select A Service</option>
-                                        <option value="1">Service 1</option>
-                                        <option value="2">Service 2</option>
-                                        <option value="3">Service 3</option>
-                                    </select>
                                 </div>
-                                <div class="col-12 col-sm-6">
-                                    <select class="form-select bg-light border-0" style="height: 55px;">
-                                        <option selected>Select Doctor</option>
-                                        <option value="1">Doctor 1</option>
-                                        <option value="2">Doctor 2</option>
-                                        <option value="3">Doctor 3</option>
-                                    </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>			
+            </div>
+        </header>
+
+        <!-- Sections -->
+        <section id="features" class="features sections">
+            <div class="container">
+                <div class="row">
+                    <div class="main_features_content2">
+
+                        <div class="col-sm-6">
+                            <div class="single_features_left text-center">
+                                <img src="assets/images/feature-2.jpg" alt="" />
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 margin-top-60">
+                            <div class="single_features_right ">
+                                <h2>OUR PRODUCT</h2>
+                                <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+                                <ul>
+                                    <li>Quisque volutpat mattis eros.</li>
+                                    <li>Nullam malesuada erat ut turpis.</li>
+                                    <li>Suspendisse urna nibh.</li>
+                                </ul>
+                                <div class="features_buttom">
+                                    <a href="" class="btn btn-default">Read More</a>
                                 </div>
-                                <div class="col-12 col-sm-6">
-                                    <input type="text" class="form-control bg-light border-0" placeholder="Your Name" style="height: 55px;">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section><!--End of Features 2 Section -->
+        <section id="features" class="features sections">
+            <div class="container">
+                <div class="row">
+                    <div class="main_features_content2">
+
+
+
+                        <div class="col-sm-6 margin-top-60">
+                            <div class="single_features_right ">
+                                <h2>PRODUCT DESCRIPTIONS</h2>
+                                <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+                                <ul>
+                                    <li>Quisque volutpat mattis eros.</li>
+                                    <li>Nullam malesuada erat ut turpis.</li>
+                                    <li>Suspendisse urna nibh.</li>
+                                </ul>
+                                <div class="features_buttom">
+                                    <a href="" class="btn btn-default">Read More</a>
                                 </div>
-                                <div class="col-12 col-sm-6">
-                                    <input type="email" class="form-control bg-light border-0" placeholder="Your Email" style="height: 55px;">
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                    <div class="date" id="date1" data-target-input="nearest">
-                                        <input type="text"
-                                            class="form-control bg-light border-0 datetimepicker-input"
-                                            placeholder="Appointment Date" data-target="#date1" data-toggle="datetimepicker" style="height: 55px;">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="single_features_left text-center">
+                                <img src="assets/images/feature-1.jpg" alt="" />
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section><!--End of Features 2 Section -->
+
+
+        <section id="service" class="service2 sections lightbg">
+            <div class="container">
+                <div class="row">
+                    <div class="main_service2">
+                        <div class="head_title text-center">
+                            <h2>SERVICES WE PROVIDE</h2>
+                            <p>condimentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+                        </div>
+
+                        <div class="service_content">
+                            <div class="col-md-6 col-sm-6">
+                                <div class="single_service2">
+                                    <div class="single_service_left">
+                                        <img src="assets/images/flaticon1.png" alt="" />
+                                    </div>
+                                    <div class="single_service_right">
+                                        <h2>Branding</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.</p>
                                     </div>
                                 </div>
-                                <div class="col-12 col-sm-6">
-                                    <div class="time" id="time1" data-target-input="nearest">
-                                        <input type="text"
-                                            class="form-control bg-light border-0 datetimepicker-input"
-                                            placeholder="Appointment Time" data-target="#time1" data-toggle="datetimepicker" style="height: 55px;">
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <div class="single_service2">
+                                    <div class="single_service_left">
+                                        <img src="assets/images/flaticon2.png" alt="" />
+                                    </div>
+                                    <div class="single_service_right">
+                                        <h2>Branding</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.</p>
                                     </div>
                                 </div>
-                                <div class="col-12">
-                                    <button class="btn btn-dark w-100 py-3" type="submit">Make Appointment</button>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <div class="single_service2">
+                                    <div class="single_service_left">
+                                        <img src="assets/images/flaticon3.png" alt="" />
+                                    </div>
+                                    <div class="single_service_right">
+                                        <h2>Branding</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.</p>
+                                    </div>
                                 </div>
                             </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Appointment End -->
-
-
-    <!-- Service Start -->
-    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container">
-            <div class="row g-5 mb-5">
-                <div class="col-lg-5 wow zoomIn" data-wow-delay="0.3s" style="min-height: 400px;">
-                    <div class="twentytwenty-container position-relative h-100 rounded overflow-hidden">
-                        <img class="position-absolute w-100 h-100" src="img/before.jpg" style="object-fit: cover;">
-                        <img class="position-absolute w-100 h-100" src="img/after.jpg" style="object-fit: cover;">
-                    </div>
-                </div>
-                <div class="col-lg-7">
-                    <div class="section-title mb-5">
-                        <h5 class="position-relative d-inline-block text-primary text-uppercase">Our Services</h5>
-                        <h1 class="display-5 mb-0">We Offer The Best Quality Dental Services</h1>
-                    </div>
-                    <div class="row g-5">
-                        <div class="col-md-6 service-item wow zoomIn" data-wow-delay="0.6s">
-                            <div class="rounded-top overflow-hidden">
-                                <img class="img-fluid" src="img/service-1.jpg" alt="">
-                            </div>
-                            <div class="position-relative bg-light rounded-bottom text-center p-4">
-                                <h5 class="m-0">Cosmetic Dentistry</h5>
-                            </div>
-                        </div>
-                        <div class="col-md-6 service-item wow zoomIn" data-wow-delay="0.9s">
-                            <div class="rounded-top overflow-hidden">
-                                <img class="img-fluid" src="img/service-2.jpg" alt="">
-                            </div>
-                            <div class="position-relative bg-light rounded-bottom text-center p-4">
-                                <h5 class="m-0">Dental Implants</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row g-5 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="col-lg-7">
-                    <div class="row g-5">
-                        <div class="col-md-6 service-item wow zoomIn" data-wow-delay="0.3s">
-                            <div class="rounded-top overflow-hidden">
-                                <img class="img-fluid" src="img/service-3.jpg" alt="">
-                            </div>
-                            <div class="position-relative bg-light rounded-bottom text-center p-4">
-                                <h5 class="m-0">Dental Bridges</h5>
-                            </div>
-                        </div>
-                        <div class="col-md-6 service-item wow zoomIn" data-wow-delay="0.6s">
-                            <div class="rounded-top overflow-hidden">
-                                <img class="img-fluid" src="img/service-4.jpg" alt="">
-                            </div>
-                            <div class="position-relative bg-light rounded-bottom text-center p-4">
-                                <h5 class="m-0">Teeth Whitening</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-5 service-item wow zoomIn" data-wow-delay="0.9s">
-                    <div class="position-relative bg-primary rounded h-100 d-flex flex-column align-items-center justify-content-center text-center p-4">
-                        <h3 class="text-white mb-3">Make Appointment</h3>
-                        <p class="text-white mb-3">Clita ipsum magna kasd rebum at ipsum amet dolor justo dolor est magna stet eirmod</p>
-                        <h2 class="text-white mb-0">+012 345 6789</h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Service End -->
-
-
-    <!-- Offer Start -->
-    <div class="container-fluid bg-offer my-5 py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="row justify-content-center">
-                <div class="col-lg-7 wow zoomIn" data-wow-delay="0.6s">
-                    <div class="offer-text text-center rounded p-5">
-                        <h1 class="display-5 text-white">Save 30% On Your First Dental Checkup</h1>
-                        <p class="text-white mb-4">Eirmod sed tempor lorem ut dolores sit kasd ipsum. Dolor ea et dolore et at sea ea at dolor justo ipsum duo rebum sea. Eos vero eos vero ea et dolore eirmod diam duo lorem magna sit dolore sed et.</p>
-                        <a href="appointment.html" class="btn btn-dark py-3 px-5 me-3">Appointment</a>
-                        <a href="" class="btn btn-light py-3 px-5">Read More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Offer End -->
-
-
-    <!-- Pricing Start -->
-    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-5">
-                    <div class="section-title mb-4">
-                        <h5 class="position-relative d-inline-block text-primary text-uppercase">Pricing Plan</h5>
-                        <h1 class="display-5 mb-0">We Offer Fair Prices for Dental Treatment</h1>
-                    </div>
-                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo eirmod magna dolore erat amet</p>
-                    <h5 class="text-uppercase text-primary wow fadeInUp" data-wow-delay="0.3s">Call for Appointment</h5>
-                    <h1 class="wow fadeInUp" data-wow-delay="0.6s">+012 345 6789</h1>
-                </div>
-                <div class="col-lg-7">
-                    <div class="owl-carousel price-carousel wow zoomIn" data-wow-delay="0.9s">
-                        <div class="price-item pb-4">
-                            <div class="position-relative">
-                                <img class="img-fluid rounded-top" src="img/price-1.jpg" alt="">
-                                <div class="d-flex align-items-center justify-content-center bg-light rounded pt-2 px-3 position-absolute top-100 start-50 translate-middle" style="z-index: 2;">
-                                    <h2 class="text-primary m-0">$35</h2>
+                            <div class="col-md-6 col-sm-6">
+                                <div class="single_service2">
+                                    <div class="single_service_left">
+                                        <img src="assets/images/flaticon4.png" alt="" />
+                                    </div>
+                                    <div class="single_service_right">
+                                        <h2>Branding</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.</p>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="position-relative text-center bg-light border-bottom border-primary py-5 p-4">
-                                <h4>Teeth Whitening</h4>
-                                <hr class="text-primary w-50 mx-auto mt-0">
-                                <div class="d-flex justify-content-between mb-3"><span>Modern Equipment</span><i class="fa fa-check text-primary pt-1"></i></div>
-                                <div class="d-flex justify-content-between mb-3"><span>Professional Dentist</span><i class="fa fa-check text-primary pt-1"></i></div>
-                                <div class="d-flex justify-content-between mb-2"><span>24/7 Call Support</span><i class="fa fa-check text-primary pt-1"></i></div>
-                                <a href="appointment.html" class="btn btn-primary py-2 px-4 position-absolute top-100 start-50 translate-middle">Appointment</a>
-                            </div>
-                        </div>
-                        <div class="price-item pb-4">
-                            <div class="position-relative">
-                                <img class="img-fluid rounded-top" src="img/price-2.jpg" alt="">
-                                <div class="d-flex align-items-center justify-content-center bg-light rounded pt-2 px-3 position-absolute top-100 start-50 translate-middle" style="z-index: 2;">
-                                    <h2 class="text-primary m-0">$49</h2>
-                                </div>
-                            </div>
-                            <div class="position-relative text-center bg-light border-bottom border-primary py-5 p-4">
-                                <h4>Dental Implant</h4>
-                                <hr class="text-primary w-50 mx-auto mt-0">
-                                <div class="d-flex justify-content-between mb-3"><span>Modern Equipment</span><i class="fa fa-check text-primary pt-1"></i></div>
-                                <div class="d-flex justify-content-between mb-3"><span>Professional Dentist</span><i class="fa fa-check text-primary pt-1"></i></div>
-                                <div class="d-flex justify-content-between mb-2"><span>24/7 Call Support</span><i class="fa fa-check text-primary pt-1"></i></div>
-                                <a href="appointment.html" class="btn btn-primary py-2 px-4 position-absolute top-100 start-50 translate-middle">Appointment</a>
-                            </div>
-                        </div>
-                        <div class="price-item pb-4">
-                            <div class="position-relative">
-                                <img class="img-fluid rounded-top" src="img/price-3.jpg" alt="">
-                                <div class="d-flex align-items-center justify-content-center bg-light rounded pt-2 px-3 position-absolute top-100 start-50 translate-middle" style="z-index: 2;">
-                                    <h2 class="text-primary m-0">$99</h2>
-                                </div>
-                            </div>
-                            <div class="position-relative text-center bg-light border-bottom border-primary py-5 p-4">
-                                <h4>Root Canal</h4>
-                                <hr class="text-primary w-50 mx-auto mt-0">
-                                <div class="d-flex justify-content-between mb-3"><span>Modern Equipment</span><i class="fa fa-check text-primary pt-1"></i></div>
-                                <div class="d-flex justify-content-between mb-3"><span>Professional Dentist</span><i class="fa fa-check text-primary pt-1"></i></div>
-                                <div class="d-flex justify-content-between mb-2"><span>24/7 Call Support</span><i class="fa fa-check text-primary pt-1"></i></div>
-                                <a href="appointment.html" class="btn btn-primary py-2 px-4 position-absolute top-100 start-50 translate-middle">Appointment</a>
-                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <!-- Pricing End -->
+        </section><!-- End of Service2 Section -->		
 
 
-    <!-- Testimonial Start -->
-    <div class="container-fluid bg-primary bg-testimonial py-5 my-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="row justify-content-center">
-                <div class="col-lg-7">
-                    <div class="owl-carousel testimonial-carousel rounded p-5 wow zoomIn" data-wow-delay="0.6s">
-                        <div class="testimonial-item text-center text-white">
-                            <img class="img-fluid mx-auto rounded mb-4" src="img/testimonial-1.jpg" alt="">
-                            <p class="fs-5">Dolores sed duo clita justo dolor et stet lorem kasd dolore lorem ipsum. At lorem lorem magna ut et, nonumy labore diam erat. Erat dolor rebum sit ipsum.</p>
-                            <hr class="mx-auto w-25">
-                            <h4 class="text-white mb-0">Client Name</h4>
-                        </div>
-                        <div class="testimonial-item text-center text-white">
-                            <img class="img-fluid mx-auto rounded mb-4" src="img/testimonial-2.jpg" alt="">
-                            <p class="fs-5">Dolores sed duo clita justo dolor et stet lorem kasd dolore lorem ipsum. At lorem lorem magna ut et, nonumy labore diam erat. Erat dolor rebum sit ipsum.</p>
-                            <hr class="mx-auto w-25">
-                            <h4 class="text-white mb-0">Client Name</h4>
-                        </div>
-                    </div>
-                </div>
+
+        <!-- Sections -->
+        <section id="price" class="price sections">
+
+
+            <div class="head_title text-center">
+                <h1>Affordable Services Package</h1>
+                <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
             </div>
-        </div>
-    </div>
-    <!-- Testimonial End -->
-
-
-    <!-- Team Start -->
-    <div class="container-fluid py-5">
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.1s">
-                    <div class="section-title bg-light rounded h-100 p-5">
-                        <h5 class="position-relative d-inline-block text-primary text-uppercase">Our Dentist</h5>
-                        <h1 class="display-6 mb-4">Meet Our Certified & Experienced Dentist</h1>
-                        <a href="appointment.html" class="btn btn-primary py-3 px-5">Appointment</a>
-                    </div>
-                </div>
-                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
-                    <div class="team-item">
-                        <div class="position-relative rounded-top" style="z-index: 1;">
-                            <img class="img-fluid rounded-top w-100" src="img/team-1.jpg" alt="">
-                            <div class="position-absolute top-100 start-50 translate-middle bg-light rounded p-2 d-flex">
-                                <a class="btn btn-primary btn-square m-1" href="#"><i class="fab fa-twitter fw-normal"></i></a>
-                                <a class="btn btn-primary btn-square m-1" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
-                                <a class="btn btn-primary btn-square m-1" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
-                                <a class="btn btn-primary btn-square m-1" href="#"><i class="fab fa-instagram fw-normal"></i></a>
-                            </div>
-                        </div>
-                        <div class="team-text position-relative bg-light text-center rounded-bottom p-4 pt-5">
-                            <h4 class="mb-2">Dr. John Doe</h4>
-                            <p class="text-primary mb-0">Implant Surgeon</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.6s">
-                    <div class="team-item">
-                        <div class="position-relative rounded-top" style="z-index: 1;">
-                            <img class="img-fluid rounded-top w-100" src="img/team-2.jpg" alt="">
-                            <div class="position-absolute top-100 start-50 translate-middle bg-light rounded p-2 d-flex">
-                                <a class="btn btn-primary btn-square m-1" href="#"><i class="fab fa-twitter fw-normal"></i></a>
-                                <a class="btn btn-primary btn-square m-1" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
-                                <a class="btn btn-primary btn-square m-1" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
-                                <a class="btn btn-primary btn-square m-1" href="#"><i class="fab fa-instagram fw-normal"></i></a>
-                            </div>
-                        </div>
-                        <div class="team-text position-relative bg-light text-center rounded-bottom p-4 pt-5">
-                            <h4 class="mb-2">Dr. John Doe</h4>
-                            <p class="text-primary mb-0">Implant Surgeon</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.1s">
-                    <div class="team-item">
-                        <div class="position-relative rounded-top" style="z-index: 1;">
-                            <img class="img-fluid rounded-top w-100" src="img/team-3.jpg" alt="">
-                            <div class="position-absolute top-100 start-50 translate-middle bg-light rounded p-2 d-flex">
-                                <a class="btn btn-primary btn-square m-1" href="#"><i class="fab fa-twitter fw-normal"></i></a>
-                                <a class="btn btn-primary btn-square m-1" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
-                                <a class="btn btn-primary btn-square m-1" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
-                                <a class="btn btn-primary btn-square m-1" href="#"><i class="fab fa-instagram fw-normal"></i></a>
-                            </div>
-                        </div>
-                        <div class="team-text position-relative bg-light text-center rounded-bottom p-4 pt-5">
-                            <h4 class="mb-2">Dr. John Doe</h4>
-                            <p class="text-primary mb-0">Implant Surgeon</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
-                    <div class="team-item">
-                        <div class="position-relative rounded-top" style="z-index: 1;">
-                            <img class="img-fluid rounded-top w-100" src="img/team-4.jpg" alt="">
-                            <div class="position-absolute top-100 start-50 translate-middle bg-light rounded p-2 d-flex">
-                                <a class="btn btn-primary btn-square m-1" href="#"><i class="fab fa-twitter fw-normal"></i></a>
-                                <a class="btn btn-primary btn-square m-1" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
-                                <a class="btn btn-primary btn-square m-1" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
-                                <a class="btn btn-primary btn-square m-1" href="#"><i class="fab fa-instagram fw-normal"></i></a>
-                            </div>
-                        </div>
-                        <div class="team-text position-relative bg-light text-center rounded-bottom p-4 pt-5">
-                            <h4 class="mb-2">Dr. John Doe</h4>
-                            <p class="text-primary mb-0">Implant Surgeon</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.6s">
-                    <div class="team-item">
-                        <div class="position-relative rounded-top" style="z-index: 1;">
-                            <img class="img-fluid rounded-top w-100" src="img/team-5.jpg" alt="">
-                            <div class="position-absolute top-100 start-50 translate-middle bg-light rounded p-2 d-flex">
-                                <a class="btn btn-primary btn-square m-1" href="#"><i class="fab fa-twitter fw-normal"></i></a>
-                                <a class="btn btn-primary btn-square m-1" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
-                                <a class="btn btn-primary btn-square m-1" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
-                                <a class="btn btn-primary btn-square m-1" href="#"><i class="fab fa-instagram fw-normal"></i></a>
-                            </div>
-                        </div>
-                        <div class="team-text position-relative bg-light text-center rounded-bottom p-4 pt-5">
-                            <h4 class="mb-2">Dr. John Doe</h4>
-                            <p class="text-primary mb-0">Implant Surgeon</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Team End -->
-
-
-    <!-- Newsletter Start -->
-    <div class="container-fluid position-relative pt-5 wow fadeInUp" data-wow-delay="0.1s" style="z-index: 1;">
-        <div class="container">
-            <div class="bg-primary p-5">
-                <form class="mx-auto" style="max-width: 600px;">
-                    <div class="input-group">
-                        <input type="text" class="form-control border-white p-3" placeholder="Your Email">
-                        <button class="btn btn-dark px-4">Sign Up</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-    <!-- Newsletter End -->
-    
-
-    <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-light py-5 wow fadeInUp" data-wow-delay="0.3s" style="margin-top: -75px;">
-        <div class="container pt-5">
-            <div class="row g-5 pt-4">
-                <div class="col-lg-3 col-md-6">
-                    <h3 class="text-white mb-4">Quick Links</h3>
-                    <div class="d-flex flex-column justify-content-start">
-                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
-                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
-                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
-                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog</a>
-                        <a class="text-light" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h3 class="text-white mb-4">Popular Links</h3>
-                    <div class="d-flex flex-column justify-content-start">
-                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
-                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
-                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
-                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog</a>
-                        <a class="text-light" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h3 class="text-white mb-4">Get In Touch</h3>
-                    <p class="mb-2"><i class="bi bi-geo-alt text-primary me-2"></i>123 Street, New York, USA</p>
-                    <p class="mb-2"><i class="bi bi-envelope-open text-primary me-2"></i>info@example.com</p>
-                    <p class="mb-0"><i class="bi bi-telephone text-primary me-2"></i>+012 345 67890</p>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h3 class="text-white mb-4">Follow Us</h3>
-                    <div class="d-flex">
-                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="#"><i class="fab fa-twitter fw-normal"></i></a>
-                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
-                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
-                        <a class="btn btn-lg btn-primary btn-lg-square rounded" href="#"><i class="fab fa-instagram fw-normal"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid text-light py-4" style="background: #051225;">
-        <div class="container">
-            <div class="row g-0">
-                <div class="col-md-6 text-center text-md-start">
-                    <p class="mb-md-0">&copy; <a class="text-white border-bottom" href="#">Your Site Name</a>. All Rights Reserved.</p>
-                </div>
-                <div class="col-md-6 text-center text-md-end">
-                    <p class="mb-0">Designed by <a class="text-white border-bottom" href="https://htmlcodex.com">HTML Codex</a><br>
-                        Distributed by <a class="text-white border-bottom" href="https://themewagon.com">ThemeWagon</a>              
+            <!-- Example row of columns -->
+            <div class="cd-pricing-container cd-has-margins">
+                <div class="cd-pricing-switcher">
+                    <p class="fieldset">
+                        <input type="radio" name="duration-2" value="monthly" id="monthly-2" checked>
+                        <label for="monthly-2">Business</label>
+                        <input type="radio" name="duration-2" value="yearly" id="yearly-2">
+                        <label for="yearly-2">Community</label>
+                        <span class="cd-switch"></span>
                     </p>
+                </div> <!-- .cd-pricing-switcher -->
+
+                <ul class="cd-pricing-list cd-bounce-invert">
+                    <li>
+                        <ul class="cd-pricing-wrapper">
+                            <li data-type="monthly" class="is-visible">
+                                <header class="cd-pricing-header">
+                                    <h2>Basic</h2>
+
+                                    <div class="cd-price">
+                                        <span class="cd-currency">$</span>
+                                        <span class="cd-value">30</span>
+                                        <span class="cd-duration">mo</span>
+                                    </div>
+                                </header> <!-- .cd-pricing-header -->
+
+                                <div class="cd-pricing-body">
+                                    <ul class="cd-pricing-features">
+                                        <li><em><i class="fa fa-check-circle"></i></em>20 Keyword</li>
+                                        <li><em><i class="fa fa-remove"></i></em>No Time Tracking</li>
+                                        <li><em><i class="fa fa-remove"></i></em>230 - Man Hour</li>
+                                        <li><em><i class="fa fa-check-circle"></i></em>News Letter Available</li>
+
+                                    </ul>
+                                </div> <!-- .cd-pricing-body -->
+
+                                <footer class="cd-pricing-footer">
+                                    <a class="cd-select" href="#">Purchase</a>
+                                </footer>  <!-- .cd-pricing-footer -->
+                            </li>
+
+                            <li data-type="yearly" class="is-hidden">
+                                <header class="cd-pricing-header">
+                                    <h2>Basic</h2>
+
+                                    <div class="cd-price">
+                                        <span class="cd-currency">$</span>
+                                        <span class="cd-value">320</span>
+                                        <span class="cd-duration">yr</span>
+                                    </div>
+                                </header> <!-- .cd-pricing-header -->
+
+                                <div class="cd-pricing-body">
+                                    <ul class="cd-pricing-features">
+                                        <li><em><i class="fa fa-check-circle"></i></em>20 Keyword</li>
+                                        <li><em><i class="fa fa-remove"></i></em>No Time Tracking</li>
+                                        <li><em><i class="fa fa-remove"></i></em>230 - Man Hour</li>
+                                        <li><em><i class="fa fa-check-circle"></i></em>News Letter Available</li>
+
+                                    </ul>
+                                </div> <!-- .cd-pricing-body -->
+
+                                <footer class="cd-pricing-footer">
+                                    <a class="cd-select" href="#">Purchase</a>
+                                </footer>  <!-- .cd-pricing-footer -->
+                            </li>
+                        </ul> <!-- .cd-pricing-wrapper -->
+                    </li>
+
+                    <li class="cd-popular">
+                        <ul class="cd-pricing-wrapper">
+                            <li data-type="monthly" class="is-visible">
+                                <header class="cd-pricing-header">
+                                    <h2>Popular</h2>
+                                    <div class="cd-price">
+                                        <span class="cd-currency">$</span>
+                                        <span class="cd-value">60</span>
+                                        <span class="cd-duration">mo</span>
+                                    </div>
+                                </header> <!-- .cd-pricing-header -->
+
+                                <div class="cd-pricing-body">
+                                    <ul class="cd-pricing-features">
+                                        <li><em><i class="fa fa-check-circle"></i></em>20 Keyword</li>
+                                        <li><em><i class="fa fa-remove"></i></em>No Time Tracking</li>
+                                        <li><em><i class="fa fa-remove"></i></em>230 - Man Hour</li>
+                                        <li><em><i class="fa fa-check-circle"></i></em>News Letter Available</li>
+
+                                    </ul>
+                                </div> <!-- .cd-pricing-body -->
+
+                                <footer class="cd-pricing-footer">
+                                    <a class="cd-select" href="#">Purchase</a>
+                                </footer>  <!-- .cd-pricing-footer -->
+                            </li>
+
+                            <li data-type="yearly" class="is-hidden">
+                                <header class="cd-pricing-header">
+                                    <h2>Popular</h2>
+
+                                    <div class="cd-price">
+                                        <span class="cd-currency">$</span>
+                                        <span class="cd-value">630</span>
+                                        <span class="cd-duration">yr</span>
+                                    </div>
+                                </header> <!-- .cd-pricing-header -->
+
+                                <div class="cd-pricing-body">
+                                    <ul class="cd-pricing-features">
+                                        <li><em><i class="fa fa-check-circle"></i></em>20 Keyword</li>
+                                        <li><em><i class="fa fa-remove"></i></em>No Time Tracking</li>
+                                        <li><em><i class="fa fa-remove"></i></em>230 - Man Hour</li>
+                                        <li><em><i class="fa fa-check-circle"></i></em>News Letter Available</li>
+
+                                    </ul>
+                                </div> <!-- .cd-pricing-body -->
+
+                                <footer class="cd-pricing-footer">
+                                    <a class="cd-select" href="#">Purchase</a>
+                                </footer>  <!-- .cd-pricing-footer -->
+                            </li>
+                        </ul> <!-- .cd-pricing-wrapper -->
+                    </li>
+
+                    <li>
+                        <ul class="cd-pricing-wrapper">
+                            <li data-type="monthly" class="is-visible">
+                                <header class="cd-pricing-header">
+                                    <h2>Premier</h2>
+
+                                    <div class="cd-price">
+                                        <span class="cd-currency">$</span>
+                                        <span class="cd-value">90</span>
+                                        <span class="cd-duration">mo</span>
+                                    </div>
+                                </header> <!-- .cd-pricing-header -->
+
+                                <div class="cd-pricing-body">
+                                    <ul class="cd-pricing-features">
+                                        <li><em><i class="fa fa-check-circle"></i></em>20 Keyword</li>
+                                        <li><em><i class="fa fa-remove"></i></em>No Time Tracking</li>
+                                        <li><em><i class="fa fa-remove"></i></em>230 - Man Hour</li>
+                                        <li><em><i class="fa fa-check-circle"></i></em>News Letter Available</li>
+
+                                    </ul>
+                                </div> <!-- .cd-pricing-body -->
+
+                                <footer class="cd-pricing-footer">
+                                    <a class="cd-select" href="#">Purchase</a>
+                                </footer>  <!-- .cd-pricing-footer -->
+                            </li>
+
+                            <li data-type="yearly" class="is-hidden">
+                                <header class="cd-pricing-header">
+                                    <h2>Premier</h2>
+
+                                    <div class="cd-price">
+                                        <span class="cd-currency">$</span>
+                                        <span class="cd-value">950</span>
+                                        <span class="cd-duration">yr</span>
+                                    </div>
+                                </header> <!-- .cd-pricing-header -->
+
+                                <div class="cd-pricing-body">
+                                    <ul class="cd-pricing-features">
+                                        <li><em><i class="fa fa-check-circle"></i></em>20 Keyword</li>
+                                        <li><em><i class="fa fa-remove"></i></em>No Time Tracking</li>
+                                        <li><em><i class="fa fa-remove"></i></em>230 - Man Hour</li>
+                                        <li><em><i class="fa fa-check-circle"></i></em>News Letter Available</li>
+
+                                    </ul>
+                                </div> <!-- .cd-pricing-body -->
+
+                                <footer class="cd-pricing-footer">
+                                    <a class="cd-select" href="#">Purchase</a>
+                                </footer>  <!-- .cd-pricing-footer -->
+                            </li>
+                        </ul> <!-- .cd-pricing-wrapper -->
+                    </li>
+                </ul> <!-- .cd-pricing-list -->
+            </div> <!-- .cd-pricing-container -->	
+
+        </section>
+
+        <!-- Sections -->
+        <section id="business" class="portfolio sections">
+            <div class="container">
+                <div class="head_title text-center">
+                    <h1>Our Business Analytics Platform</h1>
+                    <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+                </div>
+
+                <div class="row">
+                    <div class="portfolio-wrapper text-center">
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="community-edition">
+                                <i class="fa fa-book"></i>
+                                <div class="separator"></div>
+                                <h4>Community Edition</h4>
+                                <p>Visually explore your data through a free-form drag-and-drop canvas, a broad range of modern data visualizations, and an easy-to-use report authoring experience.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="community-edition">
+                                <i class="fa fa-bug"></i>
+                                <div class="separator"></div>
+                                <h4>Community Edition</h4>
+                                <p>Visually explore your data through a free-form drag-and-drop canvas, a broad range of modern data visualizations, and an easy-to-use report authoring experience.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="community-edition">
+                                <i class="fa fa-gears"></i>
+                                <div class="separator"></div>
+                                <h4>Community Edition</h4>
+                                <p>Visually explore your data through a free-form drag-and-drop canvas, a broad range of modern data visualizations, and an easy-to-use report authoring experience.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="community-edition">
+                                <i class="fa fa-external-link"></i>
+                                <div class="separator"></div>
+                                <h4>Community Edition</h4>
+                                <p>Visually explore your data through a free-form drag-and-drop canvas, a broad range of modern data visualizations, and an easy-to-use report authoring experience.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Example row of columns -->
+                <div class="row">
+                    <div class="portfolio-wrapper2 text-center">
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="community-edition">
+                                <i class="fa fa-coffee"></i>
+                                <div class="separator"></div>
+                                <h4>Community Edition</h4>
+                                <p>Visually explore your data through a free-form drag-and-drop canvas, a broad range of modern data visualizations, and an easy-to-use report authoring experience.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="community-edition">
+                                <i class="fa fa-tree"></i>
+                                <div class="separator"></div>
+                                <h4>Community Edition</h4>
+                                <p>Visually explore your data through a free-form drag-and-drop canvas, a broad range of modern data visualizations, and an easy-to-use report authoring experience.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="community-edition">
+                                <i class="fa fa-paper-plane-o"></i>
+                                <div class="separator"></div>
+                                <h4>Community Edition</h4>
+                                <p>Visually explore your data through a free-form drag-and-drop canvas, a broad range of modern data visualizations, and an easy-to-use report authoring experience.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="community-edition">
+                                <i class="fa fa-folder-open"></i>
+                                <div class="separator"></div>
+                                <h4>Community Edition</h4>
+                                <p>Visually explore your data through a free-form drag-and-drop canvas, a broad range of modern data visualizations, and an easy-to-use report authoring experience.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div> <!-- /container -->       
+        </section>
+
+
+        <section id="contact" class="contact sections">
+            <div class="container">
+                <div class="row">
+                    <div class="main_contact whitebackground">
+                        <div class="head_title text-center">
+                            <h2>GET IN TOUCH</h2>
+                            <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+                        </div>
+                        <div class="contact_content">
+                            <div class="col-md-6">
+                                <div class="single_left_contact">
+                                    <form action="#" id="formid">
+
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="name" placeholder="first name" required="">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" name="email" placeholder="Email" required="">
+                                        </div>
+
+
+                                        <div class="form-group">
+                                            <textarea class="form-control" name="message" rows="8" placeholder="Message"></textarea>
+                                        </div>
+
+                                        <div class="center-content">
+                                            <input type="submit" value="Submit" class="btn btn-default">
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="single_right_contact">
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
+
+                                    <div class="contact_address margin-top-40">
+                                        <span>1600 Pennsylvania Ave NW, Washington,</span>
+                                        <span>DC 20500, United States of America.</span> 
+                                        <span class="margin-top-20">T: (202) 456-1111</span> 
+                                        <span>M: (202) 456-1212</span> 
+                                    </div>
+
+                                    <div class="contact_socail_bookmark">
+                                        <a href=""><i class="fa fa-facebook"></i></a>
+                                        <a href=""><i class="fa fa-twitter"></i></a>
+                                        <a href=""><i class="fa fa-google"></i></a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </section><!-- End of Contact Section -->
+
+
+        <section id="footer-menu" class="sections footer-menu">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-menu-wrapper">
+
+                        <div class="col-md-8 col-sm-12 col-xs-12">
+                            <div class="col-md-4 col-sm-6 col-xs-12">
+                                <div class="menu-item">
+                                    <h5>Quick Links</h5>
+                                    <ul>
+                                        <li>POWER BI DESKTOP</li>
+                                        <li>MOBILE</li>
+                                        <li>SEE ALL DOWNLOADS</li>
+                                        <li>POWER BI DESKTOP</li>
+                                        <li>MOBILE</li>
+                                        <li>SEE ALL DOWNLOADS</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-sm-6 col-xs-12">
+                                <div class="menu-item">
+                                    <h5>Legal</h5>
+                                    <ul>
+                                        <li>PRIVACY & COOKIES</li>
+                                        <li>TERMS OF USE</li>
+                                        <li>TRADEMARKS</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-sm-6 col-xs-12">
+                                <div class="menu-item">
+                                    <h5>Information</h5>
+                                    <ul>
+                                        <li>SUPPORT</li>
+                                        <li>DEVELOPERS</li>
+                                        <li>BLOG</li>
+                                        <li>NEWSLETTER</li>
+                                        <li>PYRAMID ANALYTICS</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="menu-item">
+                                <h5>Newsletter</h5>
+                                <p>Insights await in your company's data. Bring them into focus with BlueLance.</p>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Enter your email address">
+                                    <input type="submit" class="form-control" value="Use It Free">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!--Footer-->
+        <footer id="footer" class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-wrapper">
+
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="footer-brand">
+                                <img src="assets/images/logo.png" alt="logo" />
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="copyright">
+                                <p>Made with <i class="fa fa-heart"></i> by <a target="_blank" href="https://bootstrapthemes.co"> Bootstrap Themes </a>2016. All rights reserved.</p>
+                            </div>
+
+                            <div class="copyright">
+                                <p>Distributed<i class="fa fa-heart"></i> by <a target="_blank" href="https://themewagon.com/">Themewagon</a>2016. All rights reserved.</p>
+                            </div>
+
+                        </div>
+                         
+                       
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+        <div class="scrollup">
+            <a href="#"><i class="fa fa-chevron-up"></i></a>
         </div>
-    </div>
-    <!-- Footer End -->
 
 
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
+        <script src="assets/js/vendor/jquery-1.11.2.min.js"></script>
+        <script src="assets/js/vendor/bootstrap.min.js"></script>
 
-
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/tempusdominus/js/moment.min.js"></script>
-    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
-    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
-    <script src="lib/twentytwenty/jquery.event.move.js"></script>
-    <script src="lib/twentytwenty/jquery.twentytwenty.js"></script>
-
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
-</body>
-
+        <script src="assets/js/plugins.js"></script>
+        <script src="assets/js/modernizr.js"></script>
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
